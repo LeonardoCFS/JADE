@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="foco"
+        android:summary="@string/desc_foco"
+        android:title="@string/auto_foco" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="flash"
+        android:summary="@string/desc_flash"
+        android:title="@string/usar_flash" />
+
+</PreferenceScreen>

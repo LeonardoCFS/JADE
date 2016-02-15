@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/resultadoChave"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Chave"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/resultadoCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Categoria"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="fill_vertical" />
+
+    <TextView
+        android:id="@+id/resultadoNome"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Nome"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="90dp"
+        android:gravity="fill_vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#10340b"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/resultadoCategoria" />
+
+</RelativeLayout>

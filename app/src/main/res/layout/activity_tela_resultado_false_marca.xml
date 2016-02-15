@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        tools:context="br.com.fatec.jade.TelaResultadoFalseProduto">
+
+        <ImageView
+            android:id="@+id/imgMarca"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:focusable="false"
+            android:maxHeight="120dp"
+            android:maxWidth="120dp"
+            android:minHeight="120dp"
+            android:minWidth="120dp"
+            android:src="@drawable/imgitem" />
+
+        <TextView
+            android:id="@+id/marcaNomeMFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgMarca"
+            android:text="NOME DA MARCA"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imgMarca"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ok2" />
+
+        <TextView
+            android:id="@+id/statusMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/imgStatus"
+            android:layout_alignTop="@+id/imgStatus"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgStatus"
+            android:text="Não testado em animais"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/labelComentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgStatus"
+            android:layout_marginTop="20dp"
+            android:text="Deixe sua avaliação sobre a marca"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RatingBar
+            android:id="@+id/barraAvaliacaoMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelComentar"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <EditText
+            android:id="@+id/campoComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/barraAvaliacaoMarca"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/botaoComentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campoComentario"
+            android:layout_marginTop="5dp"
+            android:text="Enviar"
+            android:onClick="novoComentarioMarca" />
+
+        <TextView
+            android:id="@+id/labelComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/botaoComentar"
+            android:layout_marginTop="15dp"
+            android:text="COMENTÁRIOS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:clickable="true"
+            android:onClick="listarComentarioMarca" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listAvMarca"
+            android:layout_below="@+id/labelComentario" />
+
+
+    </RelativeLayout>
+</ScrollView>
